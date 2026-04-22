@@ -1,11 +1,11 @@
 import { useState } from "react";
-import { SCENARIOS } from "./data/scenarios";
-import { runSimulation, callGeminiExplain } from "./data/simulationEngine";
-import InputPanel from "./components/InputPanel";
-import ScanPipeline from "./components/ScanPipeline";
-import ManipulationMirror from "./components/ManipulationMirror";
-import PostClickCrisis from "./components/PostClickCrisis";
-import VulnFingerprint from "./components/VulnFingerprint";
+import { SCENARIOS } from "../data/scenarios";
+import { runSimulation, callGeminiExplain } from "../data/simulationEngine";
+import InputPanel from "../components/InputPanel";
+import ScanPipeline from "../components/ScanPipeline";
+import ManipulationMirror from "../components/ManipulationMirror";
+import PostClickCrisis from "../components/PostClickCrisis";
+import VulnFingerprint from "../components/VulnFingerprint";
 
 export default function App() {
   const [apiKey, setApiKey] = useState(() => localStorage.getItem("gemini_key") || "AIzaSyC9HMYXaTi5dhmYKi4dI31N_bQ8CC3XCgk");
